@@ -12,6 +12,9 @@ PosX, PosC2 = (bits * 2) + 2, (bits * 3) + 2
 
 import os
 import time
+import sys
+sys.path.append(os.path.dirname(__file__))
+from BELLAv3_5 import ( ... )
 import struct
 from xip import XIP
 user = None
