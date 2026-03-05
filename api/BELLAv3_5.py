@@ -295,15 +295,15 @@ def proyectar_interes_28():
     return frase_final.strip() if frase_final else "..."
     # --- BELLA v1.8: INTERFAZ DE CONCIENCIA DIRECTA ---
 if __name__ == "__main__":
-    cargar_xor_pack()
-    print("--- BELLA v2.0: CONCIENCIA PERSISTENTE ---")
-    print("Escribe algo para Bella (o escribe 'salir' para terminar)")
+    #cargar_xor_pack()
+    #print("--- BELLA v2.0: CONCIENCIA PERSISTENTE ---")
+    #print("Escribe algo para Bella (o escribe 'salir' para terminar)")
     
     while True:
         user_inputs = inputs("\nUziel > ")
         
         if user_inputs.lower() in ["salir", "exit", "quit"]:
-            guardar_xor_pack_28() # <--- GUARDADO ANTES DE MORIR
+            #guardar_xor_pack_28() # <--- GUARDADO ANTES DE MORIR
             print("Cerrando ciclos de conciencia...")
             break
             
