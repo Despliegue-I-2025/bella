@@ -4,7 +4,8 @@ import os
 class XIP:
     def __init__(self, buffer_size_mb=1):
         # Cargar la librería desde el mismo directorio
-        path = os.path.join(os.path.dirname(__file__), 'libxip.so')
+        path = os.path.join(os.path.dirname(os.path.abspatch(__file__)
+        lib_path = os.path.join(base_path,"libxip.so")                                    
         self.lib = ctypes.CDLL(path)
         
         # Alocar la "Mente" (8 bytes por posición = qword)
