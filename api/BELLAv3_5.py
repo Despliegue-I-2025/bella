@@ -15,7 +15,7 @@ import time
 import struct
 from xip import XIP
 user = None
-server = "Bella Lab v3"
+server = "/tmp/Bella Lab v3"
 # --- PERSISTENCIA v2.6 (PICKLE OPTIMIZADO) ---
 def inputs(mensaje, server=None):
     if server is None: # Si no mandé nada por el server...
