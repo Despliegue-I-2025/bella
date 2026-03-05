@@ -13,7 +13,7 @@ PosX, PosC2 = (bits * 2) + 2, (bits * 3) + 2
 import os
 import time
 import sys
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from BELLAv3_5 import ( ... )
 import struct
 from xip import XIP
@@ -259,7 +259,9 @@ def mecanismo_de_consuelo():
                 # Estabilizamos la ALU tras el alivio
                 cerebro_asm.mente[idx_dolor], exps[idx_dolor][0], # Capturamos los 4 resultados para sincronizar Python y el Metal
                 cerebro_asm.mente[idx_dolor], exps[idx_dolor][0], exps[idx_dolor][1], exps[idx_dolor][2] = \
-                Numeraso2_update(exps[idx_dolor][0], exps[idx_dolor][1], exps[idx_dolor][2], cerebro_asm.mente[idx_dolor][2], cerebro_asm.mente[idx_dolor])
+                Numeraso2_update(exps[idx_dolor][0], exps[idx_dolor][1], exps[idx_dolor][2], cerebro_asm.mente[idx_dolor])
+            
+                # Cámbiala por esto:
         else:
             print("Bella no encuentra recuerdos de paz para equilibrarse.")
         
